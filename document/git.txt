@@ -1,0 +1,16 @@
+github使用：
+记得当时使用code时没有那么难配置，怎么在github上面建立一个实体遇到好几个坑
+首先需要配置一下
+git config --global user.name "hongliang5623"
+git config --global user.email "zhanghliang5623@126.com"
+1.403问题 git push origin master
+error: The requested URL returned error: 403 Forbidden while accessing https://github.com/hongliang5623/Operation.git/info/refs
+
+fatal: HTTP request failed
+这个据说是不支持https协议需要使用ssh协议，使用命令vim .git/config进行修改，不过好像是不好使
+git remote set-url origin https://hongliang5623@github.com/hongliang5623/Operation.git
+最终config里面是这样的 url = https://hongliang5623@github.com/hongliang5623/Operation.git
+2. Gtk-WARNING：(gnome-ssh-askpass:3085): Gtk-WARNING **: cannot open display:
+使用了一条很神奇的命令居然可以了unset SSH_ASKPASS
+剩下的就是一些常规操作
+有一点不太一样的注意git push -u origin master/git push -u origin master --force
