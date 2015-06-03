@@ -1,3 +1,4 @@
 没文化真是太可怕
 去重命令：db.link_content2.distinct('kind_cn')结果就是一个列表[]
 模糊查询的，这个命令不好使建议不要在考虑field("name").contains(name)
+强制使用某条索引：db.users.find().hint({'username':1})
