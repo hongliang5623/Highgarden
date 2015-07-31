@@ -15,3 +15,5 @@ git remote set-url origin https://hongliang5623@github.com/hongliang5623/Operati
 使用了一条很神奇的命令居然可以了unset SSH_ASKPASS
 剩下的就是一些常规操作
 有一点不太一样的注意git push -u origin master/git push -u origin master --force
+3.git config -l，查看所有配置
+vim ~/.gitconfig查看账户、邮箱
