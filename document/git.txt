@@ -17,3 +17,5 @@ git remote set-url origin https://hongliang5623@github.com/hongliang5623/Operati
 有一点不太一样的注意git push -u origin master/git push -u origin master --force
 3.git config -l，查看所有配置
 vim ~/.gitconfig查看账户、邮箱
+4.code403了
+hongliang@http://code.dapps.douban.com/hongliang/phantom.git
