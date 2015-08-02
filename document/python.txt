@@ -35,4 +35,6 @@ ok,成功
 6.有时候缺少某些模块，这时候安装完模块需要重新编译一下Python
 make clean make distclean
 7.软件安装结束，查看模块位置
+django-admin.py命令：第一是添加软连接，另一种是把目录添加到PATH里面
+sudo ln -s /usr/local/python27/bin/django-admin.py /usr/bin/django-admin.py
  which django-admin.py
