@@ -1,0 +1,2 @@
+1.登陆界面循环不进：Ctrl +alt +f1使用终端
+2.无法修改密码：mount -rw -o remount /
