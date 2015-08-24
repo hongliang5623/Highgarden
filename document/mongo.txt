@@ -3,3 +3,4 @@
 2.模糊查询的，这个命令不好使建议不要在考虑field("name").contains(name)
 3.强制使用某条索引：db.users.find().hint({'username':1})
 4.删除字段命令：使用修改器$unset时，不论对目标键使用1、0、-1或者具体的字符串等都是可以删除该目标键。
+db.projects.update({query},{$unset:{"lectures.lectures_count":""}},{multi:true})
