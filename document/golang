@@ -5,7 +5,7 @@ wget https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
 3.GOBIN:存放go程序的的可执行文件，即编译后的文件
 4.path:这个并不陌生，java、python都要设置，目的都一样为了在任何地方都可以使用go命令
 
-export GOROOT = /usr/local/go
-export GOPATH = ~/go/golib:~/go/goproject
-export GOBIN = ~/go/gobin
-export PATH = $PATH:$GOROOT/bin:$GOBIN
+export GOROOT=/usr/local/go
+export GOPATH=~/go/golib:~/go/goproject
+export GOBIN=~/go/gobin
+export PATH=$PATH:$GOROOT/bin:$GOBIN
