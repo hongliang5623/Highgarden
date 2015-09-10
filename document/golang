@@ -10,5 +10,7 @@ export GOPATH=~/go/golib:~/go/goproject
 export GOBIN=~/go/gobin
 export PATH=$PATH:$GOROOT/bin:$GOBIN
 
+高手总结：
+https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/01.1.md
 注释：
 1.源码文件一般放在gopath目录里面
