@@ -1,0 +1,27 @@
+> * 1.生成秘药公钥
+ssh-keygen -t rsa
+一路回车，各种提示按默认不要改，等待执行完毕,如果添加密码设置免密码登录就无意义
+ls ~/.ssh
+#可以看到两个密钥文件：id_rsa（私钥） id_rsa.pub（公钥）
+> * 2.把公钥放倒服务器
+scp id_rsa.pub hongliang@theoden:/home/hongliang/.ssh
+> * 3.在服务器生成authorized_keys
+cd ~/.ssh
+cat id_rsa.pub >> authorized_keys
+下面这种加行号的没有实验
+cat -n /home/cssor/.ssh/id_rsa.pub >> authorized_keys #将公钥内容加入到authorized_keys文件，没有则新建一个就行
+
+chmod 600 authorized_keys
+chmod 700 .ssh
+> * 4.在Mac上面修改.ssh/config
+vi ~/.ssh/config 配置为如下格式
+1 Host vagrant
+  2     HostName  vagrant
+  3     User  vagrant
+  4     PreferredAuthentications publickey
+  5     IdentityFile  ~/.ssh/id_rsa
+6 Host theoden
+  7     HostName  theoden
+  8     User  hongliang
+  9     PreferredAuthentications publickey
+ 10     IdentityFile  ~/.ssh/id_rsa
