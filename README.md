@@ -4,6 +4,10 @@
 - [ ] python基础巩固
 - [ ] golang语法掌握
 - [ ] java项目
+- [ ] 数据库
+- [ ] 服务器
+- [ ] 框架
+- [ ] 前段
 
 ### 常用工具
 > * 强大的[vim](https://github.com/hongliang5623/Operation/blob/master/document/vim.md) 操作
