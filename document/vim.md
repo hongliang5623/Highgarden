@@ -25,3 +25,48 @@
   9 set softtabstop=4
  10 set expandtab
  ```
+### 目前的配置
+```python
+"显示行号
+set nu
+
+"设置缩进tabstop
+set ts=4
+set shiftwidth=4
+set expandtab
+set ruler
+
+"语法高亮
+syntax on
+
+"设置编码
+set encoding=utf-8
+
+"高亮搜索的关键字
+set hlsearch
+
+"设置自动缩进
+"set cindent
+
+"设置鼠标操作
+set mouse=i
+
+"设置搜索时显示结果
+set incsearch
+
+"设置插入括号时 短暂跳转到匹配的对应括号
+set showmatch
+set matchtime=2
+
+"设置所在行列高亮
+"set cursorline
+"hi CursorLine cterm=None ctermbg=grey ctermfg=black guifg=green guibg=grey "set cursorcolumn
+":highlight Keyword term=underline
+
+autocmd BufReadPost * if line("'\"") && line("'\"") <= line("$") | exe "normal `\"" | endif
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+```
