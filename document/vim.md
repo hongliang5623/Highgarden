@@ -60,8 +60,9 @@ set matchtime=2
 
 "设置所在行列高亮
 "set cursorline
-"hi CursorLine cterm=None ctermbg=grey ctermfg=black guifg=green guibg=grey "set cursorcolumn
-":highlight Keyword term=underline
+"hi CursorLine cterm=None ctermbg=grey ctermfg=black guifg=green guibg=grey
+"set cursorcolumn
+"hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 autocmd BufReadPost * if line("'\"") && line("'\"") <= line("$") | exe "normal `\"" | endif
 autocmd FileType python set omnifunc=pythoncomplete#Complete
