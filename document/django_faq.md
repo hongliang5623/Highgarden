@@ -10,3 +10,7 @@ python manage.py runserver 10.0.0.110:8001
 django-admin.py startproject mysite
 Actually, if you use Ubuntu, it's just django-admin not django-admin.py 感觉好坑
 ```
+> * 1.查看django版本：
+python -c "import django; print(django.get_version())"
+> * 2.__init__.py: 
+一个空文件，告诉 Python 该目录是一个 Python 包
