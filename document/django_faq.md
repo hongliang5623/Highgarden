@@ -20,3 +20,4 @@ sudo apt-get install ipython
 sudo apt-get install python-pip
 > * 5.安装django： sudo pip install django 卸载sudo pip uninstall django
 或者源码安装 https://github.com/django/django.git python install setup.py
+> * 6 shell： Python manager.py shell 可以调试程序
