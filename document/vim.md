@@ -74,3 +74,15 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 ### ubuntu
 * 一条神奇的命令
 * wget https://raw.github.com/ma6174/vim/master/setup.sh -O ma6174_vim_setup.sh && bash ma6174_vim_setup.sh
+
+### 快捷键
+* 整页翻页 ctrl-f ctrl-b
+f就是forword b就是backward
+* 翻半页
+ctrl-d ctlr-u
+d=down u=up
+* 滚一行
+ctrl-e ctrl-y
+zz 让光标所杂的行居屏幕中央
+zt 让光标所杂的行居屏幕最上一行 t=top
+zb 让光标所杂的行居屏幕最下一行 b=bottom
