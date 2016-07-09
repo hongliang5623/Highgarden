@@ -7,7 +7,7 @@
 - [ ] 数据库
 - [ ] 服务器
 - [ ] 框架
-- [ ] 前段
+- [ ] 前端
 
 ### 常用工具
 > * 强大的[vim](https://github.com/hongliang5623/Operation/blob/master/document/vim.md) 操作
