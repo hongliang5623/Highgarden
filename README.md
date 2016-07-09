@@ -1,4 +1,4 @@
-# Operation
+# Growing Strong 
 静下心来，认真的研究技术。做一个纯粹的人，做一个一心一意的人
 ### 待办事宜
 - [ ] python基础巩固
