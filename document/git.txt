@@ -27,3 +27,5 @@ http://hongliang@code.dapps.douban.com/hongliang/phantom.git
 更新master主线上的东西到该分支上：$git rebase master
 切换到master分支：$git checkout master
 更新mybranch分支上的东西到master上：$git rebase mybranch
+--------------
+6.免密码登陆一句话：git config --global credential.helper store
