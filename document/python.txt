@@ -2,6 +2,9 @@ centos安装Python2.7记录
 1.安装包地址：https://www.python.org/ftp/python/2.7.5/Python-2.7.5.tgz，这个是tgz的还有很多其他版本的根据自己的需要在官网找https://www.python.org/download/releases/2.7.5/
 
 2.安装GCC，其实我不知道为什么用到了gcc编译器，可能是Python的解释器使用的c写的，使用命令yum install gcc gcc-c++
+2.1.安装zib,openssl
+ sudo yum install zlib-devel
+ yum install openssl openssl-devel -y
 
 3.安装，解压之后进入根目录
 
