@@ -42,3 +42,9 @@ django-admin.py命令：第一是添加软连接，另一种是把目录添加�
 sudo ln -s /usr/local/python27/bin/django-admin.py /usr/bin/django-admin.py
  which django-admin.py
 发现添加软连接太坑，每安装一个模块都要建立软连接，还是设置path的好使
+8.安装pip 等工具
+wget https://bootstrap.pypa.io/get-pip.pypython get-pip.py
+sudo ln -sf /usr/local/python27/bin/pip /usr/bin/pip
+pip install ipython
+ln -s /usr/local/python27/bin/ipython /usr/bin/ipython 
+
