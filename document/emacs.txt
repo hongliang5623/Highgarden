@@ -1,0 +1,27 @@
+1. 首选当然是在Ubuntu Software Center 中找或者 apt-get install emacs， 可惜的是只有emacs23版本的，所以此路不通，放弃，(现在Ubuntu12.04开始已经有了Emacs24，不过还是不推荐)。
+
+2. 在GNU的官网下载emacs24源代码，编译。可惜编译出来的版本不是基于GTK的，而且要用apt 安装一堆库。所以不推荐这种方法，但如果你真的想这么做，请参考李杀的blog Building Emacs on Linux — a Guide
+
+3. 如果能够直接下载已编译好的版本,那更好了。所以我推荐使用PPA(Personal Package Archive).
+
+访问 https://launchpad.net/~cassou/+archive/emacs。按页面上的步骤做，很简单，如下：
+
+如果你安装了老版本的emacs，删除之，否则直接进入下一步
+$ sudo apt-get purge emacs-snapshot-common emacs-snapshot-bin-common emacs-snapshot emacs-snapshot-el emacs-snapshot-gtk emacs23 emacs23-bin-common emacs23-common emacs23-el emacs23-nox emacs23-lucid auctex emacs24 emacs24-bin-common emacs24-common
+ 
+添加 PPA 到 apt repository 中:
+$ sudo add-apt-repository ppa:cassou/emacs
+$ sudo apt-get update
+ 
+然后，你就可以使用apt-get方便地下载Emacs了（这个Emacs-snapshot是最新版本，平均两周更新一次）:
+$ sudo apt-get install emacs-snapshot-el emacs-snapshot-gtk emacs-snapshot
+ 
+如果偏好稳定版本，请用这个:
+$ sudo apt-get install emacs24 emacs24-el emacs24-common-non-dfsg
+ 
+这样你就能下载编译好的最新的emacs24版本，更新也非常方便。
+ 
+----------------------补充---------------------------------------
+如果你希望使用更新的源，可以加入另一个源，https://launchpad.net/~ubuntu-elisp/+archive/ppa/。 号称官方每天更新。
+$ sudo add-apt-repository ppa:ubuntu-elisp/ppa 
+$ sudo apt-get install emacs-snapshot-el emacs-snapshot-gtk emacs-snapshot
