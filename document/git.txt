@@ -3,6 +3,7 @@ github使用：
 首先需要配置一下
 git config --global user.name "hongliang5623"
 git config --global user.email "zhanghliang5623@126.com"
+git config --global core.editor vim
 话说我的git根code的密码我真是太有智慧了，
 1.403问题 git push origin master
 error: The requested URL returned error: 403 Forbidden while accessing https://github.com/hongliang5623/Operation.git/info/refs
